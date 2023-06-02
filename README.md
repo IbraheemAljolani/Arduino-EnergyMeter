@@ -13,47 +13,47 @@ The smart meter is an advanced metering device that records electricity consumpt
 9.	Push-Button
 
 
-1.	ATmega328P:
+ 1.	ATmega328P:
 The high-performance Microchip picoPower® 8-bit AVR® RISC-based microcontroller combines 32 KB ISP Flash memory with read-while-write capabilities, 1024B EEPROM, 2 KB SRAM, 23 general purpose I/O lines, 32 general purpose working registers, three flexible timer/counters with compare modes, internal and external interrupts, serial programmable USART, a byte-oriented Two-Wire serial interface, SPI serial port, a 6-channel 10-bit A/D converter (8-channels in TQFP and QFN/MLF packages), programmable watchdog timer with internal oscillator, and five software selectable power saving modes. The device operates between 1.8-5.5 volts.
 
 ![image](https://github.com/IbraheemAljolani/E-Library/assets/124505345/774b3037-fe5f-42e0-8dfc-86bf932781fb)
 
-2.	PCB:
+ 2.	PCB:
 A printed circuit board (PCB) mechanically supports and electrically connects electrical or electronic components using conductive tracks, pads and other features etched from one or more sheet layers of copper laminated onto and/or between sheet layers of a non-conductive substrate. Components are generally soldered onto the PCB to both electrically connect and mechanically fasten them to it.
 
 ![image](https://github.com/IbraheemAljolani/E-Library/assets/124505345/48d85e82-6e98-4638-928f-5f7dcf080dd1)
 
-3.	LCD 16*2:
+ 3.	LCD 16*2:
 Nowadays, we always use the devices which are made up of LCDs such as CD players, DVD players, digital watches, computers, etc. These are commonly used in the screen industries to replace the utilization of CRTs. Cathode Ray Tubes use huge power when compared with LCDs, and CRTs heavier as well as bigger. These devices are thinner as well power consumption is extremely less.
 
 ![image](https://github.com/IbraheemAljolani/E-Library/assets/124505345/9b84ec20-6113-4433-8f82-6c2376c1eeac)
 
-4.	Crystal Oscillator 16MHz:
+ 4.	Crystal Oscillator 16MHz:
 A crystal oscillator is an electronic oscillator circuit that uses the mechanical resonance of a vibrating crystal of piezoelectric material to create an electrical signal with a constant frequency. This frequency is often used to keep track of time, as in quartz wristwatches, to provide a stable clock signal for digital integrated circuits, and to stabilize frequencies for radio transmitters and receivers. The most common type of piezoelectric resonator used is the quartz crystal, so oscillator circuits incorporating them became known as crystal oscillators.
 
 ![image](https://github.com/IbraheemAljolani/E-Library/assets/124505345/b3a67faf-16c9-47cc-a989-8a3c1c60b77f)
 
-5.	Resistance 10K:
+ 5.	Resistance 10K:
 Two resistors were used. The first resistance is used for the filter circuit used to improve the input signal received from the meter, the second resistance is used on one end of the pushbutton. The resistor pulls the input to a logical HIGH. If the pin was disconnected, it would float and the values would be unreliable, at best. If it was connected directly to VCC, then a pushed down button would cause a short circuit between VCC and GND and is likely to damage something.
 
 ![image](https://github.com/IbraheemAljolani/E-Library/assets/124505345/5e21014b-02be-462d-bcf1-f1992a6ae6a4)
 
-6.	Resistance 2K:
+ 6.	Resistance 2K:
 The resistance between the GND pin and the third pin of the LCD is used to improve the brightness of the LCD.
 
 ![image](https://github.com/IbraheemAljolani/E-Library/assets/124505345/a493e6ce-c0b0-46ad-b6b8-2913602fdfed)
 
-7.	Capacitance 22pf:
+ 7.	Capacitance 22pf:
 The low-value capacitors (often between 22 and 39pF) in crystal circuits are almost always used to “load” the crystal so that the circuit oscillates at the correct frequency. Although capacitor might have different functions but the main function of oscillator here is to remove harmonics as well as noise which might be harmful for the micro-controller. secondly using external oscillator it produces some sort of voltage which are drained at micro-controller this voltage is absorbed by capacitors.
 
 ![image](https://github.com/IbraheemAljolani/E-Library/assets/124505345/b8eada7b-799e-4d40-8406-c9cc2a78f84b)
 
-8.	Capacitance 104pf:
+ 8.	Capacitance 104pf:
 Capacitance is used to supplement the filter circuit consisting of resistance and capacitance used to improve the input signal from the meter.
 
 ![image](https://github.com/IbraheemAljolani/E-Library/assets/124505345/1279f6f4-8c40-4bf4-aef3-e8f4cd29ead6)
 
-9.	Push-Button:
+ 9.	Push-Button:
 The push-button is used for two purposes. The first, when pressed for 5 seconds, restores the readings appearing on the LCD to the zero position. The second works on switching between home and commercial type.
 
 ![image](https://github.com/IbraheemAljolani/E-Library/assets/124505345/08c251c9-c25e-4e67-a647-9a5054e28fd6)
