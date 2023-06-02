@@ -1,5 +1,3 @@
-![WhatsApp Image 2021-05-03 at 5 45 13 PM](https://github.com/IbraheemAljolani/EnergyMeter/assets/124505345/62b47daa-f676-4bf3-9b54-c62768a3c3c7)
-
 # EnergyMeter
 The smart meter is an advanced metering device that records electricity consumption in a more detailed and accurate way compared to traditional meters. Provides real-time data on energy usage, consumption, actual current drawn, and bill value. The Arduino programming language was mainly used to program the device
 
