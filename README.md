@@ -56,3 +56,30 @@ Capacitance is used to supplement the filter circuit consisting of resistance an
 The push-button is used for two purposes. The first, when pressed for 5 seconds, restores the readings appearing on the LCD to the zero position. The second works on switching between home and commercial type.
 
 ![image](https://github.com/IbraheemAljolani/E-Library/assets/124505345/08c251c9-c25e-4e67-a647-9a5054e28fd6)
+
+## ![breakdown](https://github.com/IbraheemAljolani/Arduino-EnergyMeter/assets/124505345/8ba376eb-198f-474f-ad24-d4d2161a205e) Here's a breakdown of the code:
+
+1. Library and LCD Initialization:
+   - The code includes the required libraries and initializes the LiquidCrystal library for the LCD display.
+   - Pin assignments for the LCD are defined using the `LiquidCrystal` constructor.
+
+2. Variable Declarations:
+   - Various variables are declared to store values related to electricity usage, prices, pulses, counters, and flags.
+
+3. Setup Function:
+   - The `setup()` function is called once during initialization.
+   - It configures the input pin for the pulse sensor and initializes the LCD.
+   - The initial welcome messages are displayed on the LCD.
+   - The values of the counter and another variable (`i`) are loaded from the EEPROM.
+
+4. Loop Function:
+   - The `loop()` function is executed repeatedly after the setup.
+   - It performs the following tasks:
+   - Reads the pulse sensor input and stores the value in the `pulse` variable.
+   - Reads the state of a push button (`pb1`).
+   - Updates counters and flags based on the pulse sensor input.
+   - Calculates and displays kilowatt-hour (kWh) usage and current (Amp) on the LCD.
+   - Resets the counters and prices if the push button is pressed for a certain duration.
+   - Executes different cases based on the value of the variable `i` (representing the pricing tier).
+   - Calculates and displays the corresponding price based on the kWh usage and pricing tier.
+   - Updates the value of `i` in EEPROM.
