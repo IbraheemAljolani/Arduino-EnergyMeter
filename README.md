@@ -57,7 +57,7 @@ The push-button is used for two purposes. The first, when pressed for 5 seconds,
 
 ![image](https://github.com/IbraheemAljolani/E-Library/assets/124505345/08c251c9-c25e-4e67-a647-9a5054e28fd6)
 
-## Here's a breakdown of the code:
+## ![#1589F0]Here's a breakdown of the code:
 
 1. Library and LCD Initialization:
    - The code includes the required libraries and initializes the LiquidCrystal library for the LCD display.
